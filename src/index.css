@@ -1,0 +1,50 @@
+/* Importing google fonts -Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#bee0ed, #3b7d9e);
+}
+
+#root {
+    width: 100%;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 420px;
+    border-radius: 10px;
+    background: linear-gradient(#8fa5d4, #1d5f69);
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+.weather-section :where(h2, p) {
+    color: #ffff;
+}
+
+.hourly-forecast .weather-list {
+    display: flex;  
+}
+
+.hourly-forecast .weather-item .weather-icon {
+    width:28px;
+    aspect-ratio: 1;
+}
